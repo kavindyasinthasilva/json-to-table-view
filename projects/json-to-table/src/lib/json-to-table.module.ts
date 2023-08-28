@@ -12,5 +12,8 @@ import {NgModule} from "@angular/core";
     CommonModule,
     // ... other imports
   ],
+  exports:[
+    JsonToTableComponent,
+  ]
 })
 export class JsonToTableModule { }
