@@ -8,6 +8,12 @@
     "strict": true,
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
+    "paths": {
+      "json-to-table": [
+        "dist/json-to-table/json-to-table",
+        "dist/json-to-table"
+      ]
+    },
     "sourceMap": true,
     "declaration": false,
     "downlevelIteration": true,

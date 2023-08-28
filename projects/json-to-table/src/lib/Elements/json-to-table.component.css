@@ -1,0 +1,152 @@
+:host {
+  display: block;
+
+}
+
+.payload {
+  display: inline-grid;
+  grid-gap: 0px;
+  grid-template-columns: min-content;
+  border: 1px solid #dddddd;
+  width: 100%
+}
+
+.header {
+  border: 1px solid #dddddd;
+  border-radius: 3px;
+  background-color: #28a2fd;
+
+  cursor: pointer;
+  grid-column: 1 / span 2;
+  padding: 6px;
+}
+
+.header.is-null {
+  background-color: #28a2fd;
+  border-color: #dddddd;
+}
+
+.header.is-string {
+  background-color: #28a2fd;
+  border-color: #28a2fd;
+}
+
+.header.is-number {
+  background-color: #28a2fd;
+  border-color: #28a2fd;
+}
+
+.header.is-boolean {
+  background-color: #28a2fd;
+  border-color: #28a2fd;
+}
+
+.header.is-array {
+  background-color: #28a2fd;
+  border-color: #28a2fd;
+}
+
+.header.is-object {
+  background-color: #28a2fd;
+  border-color: #28a2fd;
+}
+
+.header.is-collapsed {
+  background-color: #28a2fd;
+  border-color: #dddddd;
+}
+
+.type {}
+
+.entry-count {
+  margin-top: 4px;
+}
+
+.label {
+  background-color: #dddddd;
+  border: 1px solid #dddddd;
+  border-radius: 3px;
+  cursor: pointer;
+  grid-column: 1 / span 1;
+  padding: 4px;
+}
+
+.label.is-null {
+  background-color: #dddddd;
+  border-color: #cccccc;
+}
+
+.label.is-string {
+  background-color: #ffc900;
+  border-color: #f3b700;
+}
+
+.label.is-number {
+  background-color: #ffc900;
+  border-color: #f3b700;
+}
+
+.label.is-boolean {
+  background-color: #ffc900;
+  border-color: #f3b700;
+
+}
+
+.label.is-array {
+  background-color: #2782dd;
+  border-color: #1252a2;
+  color: #fff;
+}
+
+.label.is-object {
+  background-color: #ffff;
+  border-color: #dddddd;
+
+}
+
+
+
+
+.value {
+  background-color: #f0f0f0;
+  border: 1px solid #dddddd;
+  border-radius: 3px;
+  grid-column: 2 / span 1;
+  padding: 4px;
+}
+
+.value.is-null {
+  background-color: #f2f2f2;
+  border-color: #dddddd;
+}
+
+.value.is-string {
+  background-color: #f2f2f2;
+  border-color: #dddddd;
+}
+
+.value.is-number {
+  background-color: #f2f2f2;
+  border-color: #dddddd;
+}
+
+.value.is-boolean {
+  background-color: #f2f2f2;
+  border-color: #dddddd;
+}
+
+.value.is-array {
+  background-color: #f2f2f2;
+  border-color: #dddddd;
+}
+
+.value.is-object {
+  background-color: #ffff;
+  border-color: #dddddd;
+}
+
+.value.is-string a {
+  width: 475px;
+  word-wrap: break-word;
+  display: inline-block;
+}

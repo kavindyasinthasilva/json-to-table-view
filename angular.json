@@ -3,5 +3,37 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-  }
+    "json-to-table": {
+      "projectType": "library",
+      "root": "projects/json-to-table",
+      "sourceRoot": "projects/json-to-table/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/json-to-table/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/json-to-table/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/json-to-table/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/json-to-table/src/test.ts",
+            "tsConfig": "projects/json-to-table/tsconfig.spec.json",
+            "karmaConfig": "projects/json-to-table/karma.conf.js"
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "json-to-table"
 }

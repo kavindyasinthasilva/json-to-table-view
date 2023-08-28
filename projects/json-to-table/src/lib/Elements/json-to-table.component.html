@@ -1,0 +1,92 @@
+<div
+  class="payload"
+  [ngSwitch]="valueType">
+
+  <ng-template ngSwitchCase="Null">
+
+    <ng-template [ngIf]="( ! isCollapsed )">
+      <div class="value is-null">
+        null
+      </div>
+    </ng-template>
+  </ng-template>
+
+  <ng-template ngSwitchCase="String">
+
+    <ng-template [ngIf]="( ! isCollapsed )">
+      <div class="value is-string">
+        <a (click)="parseString( $event )">
+          {{ value }}
+        </a>
+      </div>
+    </ng-template>
+  </ng-template>
+
+  <ng-template ngSwitchCase="Number">
+
+    <ng-template [ngIf]="( ! isCollapsed )">
+      <div class="value is-number">
+        {{ value }}
+      </div>
+    </ng-template>
+  </ng-template>
+
+  <ng-template ngSwitchCase="Boolean">
+
+    <ng-template [ngIf]="( ! isCollapsed )">
+      <div class="value is-boolean">
+        {{ value }}
+      </div>
+    </ng-template>
+  </ng-template>
+
+  <ng-template ngSwitchCase="Array">
+    <div
+      (click)="toggle()"
+      class="header is-array"
+      [class.is-collapsed]="isCollapsed">
+      <div class="type">
+        Array
+      </div>
+      <div class="entry-count">
+        Entries: {{ entryCount }}
+      </div>
+    </div>
+    <ng-template [ngIf]="( ! isCollapsed )">
+      <ng-template ngFor let-subvalue let-index="index" [ngForOf]="value">
+        <div
+          (click)="toggle( index )"
+          class="label is-array"
+          [class.is-collapsed]="collapsedEntries[ index ]">
+          {{ index }}
+        </div>
+        <ng-template [ngIf]="( ! collapsedEntries[ index ] )">
+          <div class="value is-array">
+            <AutoJsonComponent [value]="subvalue"></AutoJsonComponent>
+          </div>
+        </ng-template>
+      </ng-template>
+    </ng-template>
+  </ng-template>
+
+  <ng-template ngSwitchCase="Object">
+
+    <ng-template [ngIf]="!isCollapsed">
+      <ng-template ngFor let-subvalue [ngForOf]="value | keyvalue">
+        <div
+          (click)="toggle(assertStringKey(subvalue.key))"
+          class="label is-object"
+          [class.is-collapsed]="collapsedEntries[assertStringKey(subvalue.key)]">
+          {{ subvalue.key }}
+        </div>
+        <ng-template [ngIf]="!collapsedEntries[assertStringKey(subvalue.key)]">
+          <div class="value is-object">
+            <AutoJsonComponent [value]="subvalue.value"></AutoJsonComponent>
+          </div>
+        </ng-template>
+      </ng-template>
+    </ng-template>
+  </ng-template>
+
+
+</div>
