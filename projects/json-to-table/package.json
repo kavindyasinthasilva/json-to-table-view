@@ -1,12 +1,18 @@
 {
   "name": "json-to-table-com",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "kavindu yasintha silva",
+  "description": "A JSON-to-Table Converter Package for Converting JSON Data into Tabular Format for Enhanced Visualization",
   "peerDependencies": {
     "@angular/common": "^12.2.0",
     "@angular/core": "^12.2.0"
   },
   "dependencies": {
     "tslib": "^2.3.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kavindyasinthasilva/json-to-table-view.git"
+  },
+  "keywords": ["Anguler","HTML","json to table","Html table","JSON to table", "data visualization", "tabular format", "converter", "visualization", "JSON data"]
 }
