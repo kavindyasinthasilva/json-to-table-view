@@ -14,7 +14,7 @@ Install the library via npm:
 npm install json-to-table-com
 ```
 
-##Usage
+## Usage
 
 ### 1.Import the JsonToTableModule in your Angular application's module:
 
@@ -44,20 +44,20 @@ Replace yourJsonValue with the JSON data you want to display.
 ```bash
 <AutoJsonComponent [value]="yourJsonValue"></AutoJsonComponent>
 ```
-##Features
+## Features
 
 - Display JSON data in a collapsible table format.
 - Automatically detects and displays the data type of JSON values.
 - Supports nested JSON objects and arrays.
 
-##License
+## License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-##Author
+## Author
 
 Kavindu Yasintha Silva
 
-##Contributing
+## Contributing
 
 Contributions are welcome! Feel free to open an issue or submit a pull reques
 

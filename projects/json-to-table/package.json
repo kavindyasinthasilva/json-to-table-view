@@ -1,6 +1,6 @@
 {
   "name": "json-to-table-com",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "author": "kavindu yasintha silva",
   "description": "A JSON-to-Table Converter Package for Converting JSON Data into Tabular Format for Enhanced Visualization",
   "peerDependencies": {
