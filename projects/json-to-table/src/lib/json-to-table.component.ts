@@ -29,8 +29,8 @@ interface CollapsedEntries {
   selector: "AutoJsonComponent",
   inputs: [ "value" ],
   changeDetection: ChangeDetectionStrategy.OnPush,
-  styleUrls: [ "./Elements/json-to-table.component.css" ],
-  templateUrl: "./Elements/json-to-table.component.html"
+  styleUrls: [ "./json-to-table.component.css" ],
+  templateUrl: "./json-to-table.component.html"
 })
 export class JsonToTableComponent implements OnInit,AfterViewInit {
 
