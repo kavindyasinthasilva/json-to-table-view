@@ -2,23 +2,15 @@
 
 This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.0.
 
-## Code scaffolding
+# JSON to Table Component
 
-Run `ng generate component component-name --project json-to-table` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project json-to-table`.
-> Note: Don't forget to add `--project json-to-table` or else it will be added to the default project in your `angular.json` file. 
+The JSON to Table Component is an Angular library that allows you to display JSON data in a user-friendly tabular format.
 
-## Build
+## Installation
 
-Run `ng build json-to-table` to build the project. The build artifacts will be stored in the `dist/` directory.
+Install the library via npm:  
 
-## Publishing
+```bash
+npm install json-to-table-com
 
-After building your library with `ng build json-to-table`, go to the dist folder `cd dist/json-to-table` and run `npm publish`.
 
-## Running unit tests
-
-Run `ng test json-to-table` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
