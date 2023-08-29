@@ -14,7 +14,7 @@
 .header {
   border: 1px solid #dddddd;
   border-radius: 3px;
-  background-color: #28a2fd;
+  background-color: #dd0330;
 
   cursor: pointer;
   grid-column: 1 / span 2;
@@ -22,38 +22,38 @@
 }
 
 .header.is-null {
-  background-color: #28a2fd;
+  background-color: #dd0330;
   border-color: #dddddd;
 }
 
 .header.is-string {
-  background-color: #28a2fd;
-  border-color: #28a2fd;
+  background-color: #dd0330;
+  border-color: #dd0330;
 }
 
 .header.is-number {
-  background-color: #28a2fd;
-  border-color: #28a2fd;
+  background-color: #df5e73;
+  border-color: #df5e73;
 }
 
 .header.is-boolean {
-  background-color: #28a2fd;
-  border-color: #28a2fd;
+  background-color: #df5e73;
+  border-color: #df5e73;
 }
 
 .header.is-array {
-  background-color: #28a2fd;
-  border-color: #28a2fd;
+  background-color: #e58494;
+  border-color: #e58494;
 }
 
 .header.is-object {
-  background-color: #28a2fd;
-  border-color: #28a2fd;
+  background-color: #cc4c5c;
+  border-color: #cc4c5c;
 }
 
 .header.is-collapsed {
-  background-color: #28a2fd;
-  border-color: #dddddd;
+  background-color: #cc2c44;
+  border-color: #cc2c44;
 }
 
 .type {}
@@ -93,8 +93,8 @@
 }
 
 .label.is-array {
-  background-color: #2782dd;
-  border-color: #1252a2;
+  background-color: #df5e73;
+  border-color: #df5e73;
   color: #fff;
 }
 
