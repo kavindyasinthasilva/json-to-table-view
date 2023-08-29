@@ -1,5 +1,7 @@
 # JsonToTable
 
+![Image](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*dD6aUpmHSe-dFY5YiVvq_w.png)
+
 This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.0.
 
 # JSON to Table Component
@@ -48,7 +50,9 @@ Replace yourJsonValue with the JSON data you want to display.
 
 - Display JSON data in a collapsible table format.
 - Automatically detects and displays the data type of JSON values.
-- Supports nested JSON objects and arrays.
+- Supports nested JSON objects and arrays (number,string,bool,array,object).
+
+
 
 ## License
 This project is licensed under the MIT License - see the LICENSE file for details.
