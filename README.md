@@ -1,27 +1,63 @@
 # JsonToTable
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.17.
+This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.0.
 
-## Development server
+# JSON to Table Component
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+The JSON to Table Component is an Angular library that allows you to display JSON data in a user-friendly tabular format.
 
-## Code scaffolding
+## Installation
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Install the library via npm:
 
-## Build
+```bash
+npm install json-to-table-com
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+##Usage
 
-## Running unit tests
+### 1.Import the JsonToTableModule in your Angular application's module:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```bash
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { JsonToTableModule } from 'json-to-table-com';
 
-## Running end-to-end tests
+@NgModule({
+  declarations: [
+    // Your app's components
+  ],
+  imports: [
+    BrowserModule,
+    JsonToTableModule, // Import the JsonToTableModule
+  ],
+  bootstrap: [AppComponent],
+})
+export class AppModule {}
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+```
 
-## Further help
+### 2.Use the AutoJsonComponent in your component's template to display JSON data:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Replace yourJsonValue with the JSON data you want to display.
+
+```bash
+<AutoJsonComponent [value]="yourJsonValue"></AutoJsonComponent>
+```
+##Features
+
+- Display JSON data in a collapsible table format.
+- Automatically detects and displays the data type of JSON values.
+- Supports nested JSON objects and arrays.
+
+##License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+##Author
+
+Kavindu Yasintha Silva
+
+##Contributing
+
+Contributions are welcome! Feel free to open an issue or submit a pull reques
+
