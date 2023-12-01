@@ -59,5 +59,5 @@ Kavindu Yasintha Silva
 
 ## Contributing
 
-Contributions are welcome! Feel free to open an issue or submit a pull reques
+Contributions are welcome! Feel free to open an issue or submit a pull request
 
